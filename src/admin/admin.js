@@ -3,6 +3,15 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './styles.css';
 
+import AWS from 'aws-sdk';
+
+AWS.config.update({
+  accesKeyId: procces.env.REACT_APP_AWS_ACCESS_KEY_ID,
+  secretAccesKey: procces.env.REACT_APP_AWS_SECRET_ACCESS_KEY,
+  region:'us-east-1',
+  sessionToken: procces.env.REACT_APP_AWS_SESSION_TOKEN
+ });
+ 
 //{"_id":{"$oid":"64a4f1fd8208232a36d0dee0"},"nombres":"Pablo Holguin","Placa":"GTP2526","Numero_contacto":"0994809384","email":"pablo_ph@hotmail.com","tipo_id":"Cedula","identificacion":"0994809385","estado":"enviada","marca":"nissan","modelo":"kids","nivel_tanque":"1.5","observacio":"rayones laterales"}
 export default function Admin() {
   
