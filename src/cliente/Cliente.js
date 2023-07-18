@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
 import Inicio from '../Inicio';
 import './styles.css';
-
 import AWS from 'aws-sdk';
 
 AWS.config.update({
