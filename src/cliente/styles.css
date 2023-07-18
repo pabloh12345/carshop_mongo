@@ -1,0 +1,9 @@
+.boton-personalizado {
+    width: 200px;
+    height: 50px;
+    /* Agrega otros estilos aquí si lo deseas */
+  }
+  .boton-modifica {
+    border-color: #61dafb;
+
+  }
